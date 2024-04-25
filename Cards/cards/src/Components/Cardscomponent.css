@@ -1,0 +1,157 @@
+.card {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-name-input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-description-input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 100px;
+}
+
+.card-status-select {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-ok-button {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.card-footer {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.card-add-task-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-task-status {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.add-task-button {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Pop-up window styles */
+.Modal {
+  width: 8rem; /* Reduced width */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Reduced padding */
+  z-index: 1000;
+}
+
+.Modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.Modal-close-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.Modal-content {
+  margin-bottom: 20px;
+}
+
+.Modal-input,
+.Modal-textarea,
+.Modal-select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Modal-textarea {
+  height: 100px;
+}
+
+.Modal-button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Modal-ok-button,
+.Modal-cancel-button {
+  
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.Modal-cancel-button {
+  margin-top: 1rem; /* Added upper margin */
+  background-color: #ccc;
+}

@@ -1,6 +1,32 @@
-.app {
-  text-align: center;
-  padding: 20px;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 80px; /* Adjust this value based on the header height */
+  position: relative;
+}
+
+.add-task-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 1000;
 }
 
 .card-container {
@@ -8,6 +34,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 20px;
+  margin-top: 20px; /* Add margin to create a gap between header and cards */
 }
 
 .card {
@@ -19,33 +47,4 @@
   flex-grow: 1;
   flex-basis: 300px;
   margin: 10px 0;
-}
-
-.card-body {
-  padding: 10px 0;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.card-text {
-  color: #666;
-}
-
-.btn {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-@media (max-width: 768px) {
-  .card {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
 }
